@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:id="@+id/id_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_001"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/title_color">
+
+            <ImageView
+                android:id="@+id/btn_menu"
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/menu"
+                android:tint="@color/contents"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/contents"
+                android:layout_centerInParent="true"
+                android:textSize="30sp"
+                android:typeface="serif"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/log_out"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/person"
+                android:tint="@color/contents" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="back_main"
+            android:visibility="gone"
+            android:id="@+id/back_main"
+            android:layout_below="@+id/rl_001"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/backpress"
+            android:layout_below="@+id/rl_001"
+            android:layout_margin="5dp"
+            android:visibility="gone"
+            android:id="@+id/recycle_back"/>
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/navigationView"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_below="@+id/recycle_back"
+            android:layout_above="@+id/navigationView"/>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/navigationView"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@android:color/white"
+            app:menu="@menu/bottom_nav"
+            app:itemIconTint="@drawable/bottomnav_tint"
+            app:itemTextColor="@drawable/bottomnav_tint"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_silde"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.75"
+            android:background="@color/line"/>
+
+        <FrameLayout
+            android:id="@+id/view_sildebar"
+            android:layout_width="280dp"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+</RelativeLayout>
+

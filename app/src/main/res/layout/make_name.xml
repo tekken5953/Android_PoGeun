@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="닉네임을 생성해 주세요."
+        android:textSize="20sp"
+        android:id="@+id/make_name_tx"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/make_name_tx"
+        android:backgroundTint="@color/black"
+        android:id="@+id/make_name_edit"
+        android:layout_marginLeft="60dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
+        android:text="확 인"
+        android:textSize="15sp"
+        android:id="@+id/make_name_btn"
+        android:layout_toRightOf="@+id/make_name_edit"
+        android:layout_below="@+id/make_name_tx"
+        android:layout_margin="30dp"/>
+
+
+</RelativeLayout>

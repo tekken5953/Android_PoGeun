@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/login_layout"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_text"
+        android:text="포 근"
+        android:textColor="@color/title_color"
+        android:textSize="60sp"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+
+    <EditText
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_edit_id"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/login_text"
+        android:layout_marginTop="30dp"
+        android:hint="아이디를 입력하세요."
+        android:backgroundTint="@color/bright_black"
+        android:gravity="center"/>
+
+    <EditText
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_edit_pwd"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/login_edit_id"
+        android:layout_marginTop="20dp"
+        android:hint="비밀번호를 입력하세요."
+        android:backgroundTint="@color/bright_black"
+        android:inputType="numberPassword"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="비밀번호가 기억나지 않으세요?"
+        android:id="@+id/miss_pwd"
+        android:layout_below="@+id/login_edit_pwd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/bright_black"
+        android:textSize="12sp"/>
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_btn"
+        android:text="로그인"
+        android:background="@drawable/button_background"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/miss_pwd"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/sign_up"
+        android:text="회원가입"
+        android:background="@drawable/button_background"
+        android:layout_below="@id/login_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sleep"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

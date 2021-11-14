@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "811472250129",
+    "firebase_url": "https://poguen-ea8fa.firebaseio.com",
+    "project_id": "poguen-ea8fa",
+    "storage_bucket": "poguen-ea8fa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:811472250129:android:9da608db8fde4cbd9698b0",
+        "android_client_info": {
+          "package_name": "com.example.pogeun"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "811472250129-4q9bb5imc812fd96ngimu70f9g4afrtv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1JQ0IwxniCXdAC3EH_0yLvyyjqDLWAb4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "811472250129-4q9bb5imc812fd96ngimu70f9g4afrtv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

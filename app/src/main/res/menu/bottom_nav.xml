@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="홈"
+        android:icon="@drawable/home"
+        android:enabled="true"
+        android:id="@+id/bottom_home"/>
+
+    <item
+        android:title="음악"
+        android:icon="@drawable/music"
+        android:enabled="true"
+        android:id="@+id/bottom_music"/>
+
+    <item
+        android:title="알람"
+        android:icon="@drawable/alarm"
+        android:enabled="true"
+        android:id="@+id/bottom_alarm"/>
+
+    <item
+        android:title="설정"
+        android:icon="@drawable/option"
+        android:enabled="true"
+        android:id="@+id/bottom_option"/>
+
+</menu>
